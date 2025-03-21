@@ -73,6 +73,10 @@ const posts = ref([]);
 </script>
   
 <style scoped>
+body {
+    touch-action: none;
+}
+    
 #post-container {
     margin-top: 20px;
 }
