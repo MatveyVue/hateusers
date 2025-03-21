@@ -115,7 +115,7 @@ const posts = ref([]);
     width: 95%;
     height: 45px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 500px;
     margin-top: 10px;
 }
 </style>
