@@ -7,7 +7,7 @@ export const profile = ref([
     infd: "Web3 Scammer",
     info: "Web3 scammer and cyber dangerous criminal who can do anything with his team",
     infomodl: "Web3 Scammers and dangerous cybercriminals who can do anything with their team, also prosecuted for hacking and DDoS of major exchanges and companie",
-    tags: ["Scammers", "Web3", "Toxic", "School"],
+    tags: ["Scammers", "Web3", "Toxic"],
   },
   {
     icon: "https://i.postimg.cc/qBsh7J0M/IMG-4891.png",
