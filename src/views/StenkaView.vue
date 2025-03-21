@@ -51,6 +51,10 @@ const firebaseConfig = {
 </script>
   
 <style scoped>
+body {
+    touch-action: none;
+}
+    
 .active {
     font-family: Geologica;
     color: white;
