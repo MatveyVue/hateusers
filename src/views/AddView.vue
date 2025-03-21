@@ -1,5 +1,5 @@
 <template>
-<div style="text-align: center; font-family: Geologica; color: white; margin-top: 100px;">
+<div style="text-align: center; font-family: Geologica; color: white; margin-top: 20px;">
 <h1>Create Message<br>To Stenka</h1>
 </div>
 <div style="text-align: center; margin-top: 50px;">
@@ -73,10 +73,6 @@ const posts = ref([]);
 </script>
   
 <style scoped>
-body {
-    touch-action: none;
-}
-    
 #post-container {
     margin-top: 20px;
 }
@@ -101,7 +97,7 @@ body {
 .mess {
     background-color: #272727;
     border: 0.5px solid #373737;
-    height: 150px;
+    height: 120px;
     width: 95%;
     border-radius: 15px;
     margin-top: 10px;
@@ -116,13 +112,10 @@ body {
     font-size: 16px;
     color: white;
     border: none;
-    width: 90%;
+    width: 95%;
     height: 45px;
     border-radius: 10px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
     max-width: 400px;
-    transform: translate(-50%, -50%);
+    margin-top: 10px;
 }
 </style>
