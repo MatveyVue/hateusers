@@ -11,5 +11,7 @@
 <style scoped>
 body {
   overflow: hidden;
+  overflow-y; hidden;
+  touch-action: none
 }
 </style>
