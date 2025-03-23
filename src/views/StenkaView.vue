@@ -56,6 +56,7 @@ const firebaseConfig = {
 <style scoped>
 body {
   touch-action: none;
+  background-attachment:fixed
 }
 
 .active {
