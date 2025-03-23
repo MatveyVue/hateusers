@@ -10,7 +10,7 @@
 <RouterLink to="nft">
     <button class="nft">NFT</button>
 </RouterLink>
-    <div id="post-container">
+    <div id="post-container" style="overflow-y: scroll;">
       <div v-for="post in posts" :key="post.key" class="post-item" style="margin-top: 12px;">
         <b>{{ post.nick }}</b><br>{{ post.text }}
       </div>
@@ -56,7 +56,6 @@ const firebaseConfig = {
 <style scoped>
 body {
   touch-action: none;
-  overflow-y: scroll;
 }
 
 .active {
