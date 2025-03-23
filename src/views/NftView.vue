@@ -76,7 +76,7 @@ body {
 }
 
 .infonft {
-    background-color: #222222;
+    background-color: #242424;
     width: 160px;
     height: 70px;
     position: absolute;
