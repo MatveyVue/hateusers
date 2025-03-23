@@ -28,7 +28,6 @@
 <style scoped>
 body {
     touch-action: none;
-    overflow-y: scroll;
 }
 
 .active {
