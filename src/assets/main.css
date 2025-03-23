@@ -2,7 +2,6 @@ body {
   background-color: rgb(30, 30, 30);
   touch-action: none;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .hatebtn {
