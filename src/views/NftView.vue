@@ -18,7 +18,7 @@
     <div class="infonft">
         <p style="margin-left: 5px; margin-top: 5px;">Hate Caps</p>
         <p style="font-size: 12px; color: grey; margin-left: 5px; margin-top: -12px;">Quantity: 10 Caps</p>
-<a href="https://ton.app/ru/pay/transfer/UQDW5V6H3mx3p31qlkEHTkkewiXkqX8wRdOl5F6E0pWMXle4?amount=300000000&text=HateCaps">
+<a href="http://hatepay.work.gd/">
         <button class="claim">Claim 0.3 TON</button>
 </a>
     </div>
