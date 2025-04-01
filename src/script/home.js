@@ -16,6 +16,13 @@ export const profile = ref([
     info: "Steals gifts in telegram via a special script and kidacett ddos ​​balenciage",
     tags: ["Python", "Vue", "Geniys"],
   },
+  {
+    icon: "https://i.postimg.cc/qBsh7J0M/IMG-4891.png",
+    nick: "Bat0n1337",
+    infd: "Stupid troll",
+    info: "Scammer and giftStupid troll, instead of a human there sits a non-earthnet.",
+    tags: ["Scammer", "Troll", "Python", "Bot", "GPT"],
+  },
 ]);
 
 export const open = ref(false);
