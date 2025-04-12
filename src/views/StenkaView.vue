@@ -1,7 +1,7 @@
 <template>
 <h1 class="active">Stenka</h1>
 <button class="add">Add Hate</button>
-<div style="overflow-x: scroll; display: flex;">
+<div class="scrollbar" style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
     <button class="hate">Hate</button>
 </RouterLink>
