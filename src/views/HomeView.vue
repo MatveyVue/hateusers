@@ -3,13 +3,20 @@
 <a href="https://t.me/haterusers">
 <button class="add">Add Hate</button>
 </a>
-<button class="hate">Hate</button>
+<div style="overflow-x: scroll; display: flex;">
+<RouterLink to="home">
+    <button class="hate">Hate</button>
+</RouterLink>
 <RouterLink to="stenka">
     <button class="stenka">Stenka</button>
 </RouterLink>
 <RouterLink to="nft">
     <button class="nft">NFT</button>
 </RouterLink>
+<RouterLink to="task">
+    <button class="task">Task</button>
+</RouterLink>
+</div>
 <div v-for="(person, index) in profile" :key="index" class="ankets">
       <img class="icon" :src="person.icon" alt="Profile Icon" v-if="person.icon">
       <p class="nick">{{ person.nick }}</p>
@@ -29,6 +36,7 @@ console.log(profile.value);
 <style scoped>
 body {
     touch-action: none;
+    overflow-y: scroll;
 }
 
 .active {
@@ -141,6 +149,17 @@ body {
 }
 
 .nft {
+    background-color: #333333;
+    border: 0.5px solid #515151;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Geologica;
+    color: white;
+    margin-left: 10px;
+}
+
+.task {
     background-color: #333333;
     border: 0.5px solid #515151;
     width: 100px;
