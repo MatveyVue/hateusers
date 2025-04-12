@@ -25,14 +25,21 @@
 
 <script>
 export default {
-methods: {
+    methods: {
     shareToStory() {
-        this.TelegramWebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg', {
-            text: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
-          });
+        if (this.TelegramWebApp) { // Проверяем, что TelegramWebApp существует
+            this.TelegramWebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg', {
+                text: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
+            });
+        } else {
+            // Действия, если Telegram.WebApp не доступен
+            console.error("Telegram.WebApp не доступен");
+            // Например, можно показать сообщение пользователю
+            alert("Эта функция доступна только в Telegram Web App");
+        }
     }
   }
-};
+}
 </script>
 
 <style scoped>
