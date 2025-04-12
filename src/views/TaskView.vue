@@ -2,7 +2,7 @@
     <h1 class="active">Task</h1>
 <div style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
-   <button class="hate">Hate</button>
+    <button class="hate">Hate</button>
 </RouterLink>
 <RouterLink to="stenka">
     <button class="stenka">Stenka</button>
@@ -25,14 +25,7 @@
 
 <script>
 export default {
-  mounted() {
-    if (typeof Telegram.WebApp === 'undefined') {
-       console.error("Telegram.WebApp не определен");
-        return;
-    }
-    this.TelegramWebApp = Telegram.WebApp; 
-  },
-  methods: {
+methods: {
     shareToStory() {
         this.TelegramWebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg', {
             text: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
