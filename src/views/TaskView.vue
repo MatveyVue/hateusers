@@ -19,11 +19,28 @@
     <img class="imgstory" src="../components/hatewhsxg.jpg" width="150px">
     <p style="margin-left: 5px; margin-top: 160px; position: absolute; font-family: Geologica; color: white;">Hate Story</p>
     <p style="font-family: Geologica; font-size: 12px; color: grey; margin-left: 5px; margin-top: 180px; position: absolute;">Tyler's first assignment...</p>
-    <a href="javascript:Telegram.WebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg',{text:'@HateUsersBot and go hate your friends, also don't forget to visit the channel @hatewhsxg'});">
-        <button class="share">Share To Story</button>
-    </a>
+    <button @click="shareToStory()" class="share">Share To Story</button>
 </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    if (typeof Telegram.WebApp === 'undefined') {
+       console.error("Telegram.WebApp не определен");
+        return;
+    }
+    this.TelegramWebApp = Telegram.WebApp; 
+  },
+  methods: {
+    shareToStory() {
+        this.TelegramWebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg', {
+            text: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
+          });
+    }
+  }
+};
+</script>
 
 <style scoped>
 body {
