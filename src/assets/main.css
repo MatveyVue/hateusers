@@ -2,7 +2,9 @@ body {
   background-color: rgb(30, 30, 30);
   touch-action: none;
   overflow-x: hidden;
-  background-attachment:fixed
+  background-attachment: fixed;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .hatebtn {
