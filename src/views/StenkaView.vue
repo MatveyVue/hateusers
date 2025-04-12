@@ -1,17 +1,22 @@
 <template>
 <h1 class="active">Stenka</h1>
-<RouterLink to="add">
 <button class="add">Add Hate</button>
-</RouterLink>
+<div style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
-<button class="hate">Hate</button>
+    <button class="hate">Hate</button>
 </RouterLink>
-<button class="stenka">Stenka</button>
+<RouterLink to="stenka">
+    <button class="stenka">Stenka</button>
+</RouterLink>
 <RouterLink to="nft">
     <button class="nft">NFT</button>
 </RouterLink>
+<RouterLink to="task">
+    <button class="task">Task</button>
+</RouterLink>
+</div>
     <div id="post-container" style="overflow-y: scroll;">
-      <div v-for="post in posts" :key="post.key" class="post-item" style="margin-top: 12px;">
+      <div v-for="post in posts" :key="post.key" class="post-item" style="margin-top: 12px; max-width: 500px;">
         <b>{{ post.nick }}</b><br>{{ post.text }}
       </div>
     </div>
@@ -56,7 +61,7 @@ const firebaseConfig = {
 <style scoped>
 body {
   touch-action: none;
-  background-attachment:fixed
+  overflow-y: scroll;
 }
 
 .active {
@@ -96,6 +101,17 @@ body {
 }
 
 .nft {
+    background-color: #333333;
+    border: 0.5px solid #515151;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Geologica;
+    color: white;
+    margin-left: 10px;
+}
+
+.task {
     background-color: #333333;
     border: 0.5px solid #515151;
     width: 100px;
