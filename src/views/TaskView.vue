@@ -1,6 +1,6 @@
 <template>
     <h1 class="active">Task</h1>
-<div style="overflow-x: scroll; display: flex;">
+<div class="scrollbar" style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
     <button class="hate">Hate</button>
 </RouterLink>
