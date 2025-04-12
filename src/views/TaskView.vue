@@ -16,9 +16,9 @@
 </div>
 
 <div class="story">
-    <img class="imgstory" src="../components/hatewhsxg.jpg" width="150px">
-    <p style="margin-left: 5px; margin-top: 160px; position: absolute; font-family: Geologica; color: white;">Hate Story</p>
-    <p style="font-family: Geologica; font-size: 12px; color: grey; margin-left: 5px; margin-top: 180px; position: absolute;">Tyler's first assignment...</p>
+    <img class="imgstory" src="../components/hatewhsxg.jpg" width="160px">
+    <p style="margin-left: 5px; margin-top: 165px; position: absolute; font-family: Geologica; color: white;">Hate Story</p>
+    <p style="font-family: Geologica; font-size: 12px; color: grey; margin-left: 5px; margin-top: 185px; position: absolute;">Tyler's first assignment...</p>
     <button @click="shareToStory()" class="share">Share To Story</button>
 </div>
 </template>
@@ -118,7 +118,7 @@ body {
 
 .story {
     background-color: #272727;
-    width: 150px;
+    width: 160px;
     height: 240px;
     border-radius: 15px;
     margin-top: 15px;
@@ -129,7 +129,7 @@ body {
     font-family: Geologica;
     color: white;
     border: none;
-    width: 150px;
+    width: 160px;
     height: 35px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
