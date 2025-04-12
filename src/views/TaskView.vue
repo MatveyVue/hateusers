@@ -2,16 +2,16 @@
     <h1 class="active">Task</h1>
 <div class="scrollbar" style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
-    <button class="hate">Hate</button>
+    <button @click="anotherAction" class="hate">Hate</button>
 </RouterLink>
 <RouterLink to="stenka">
-    <button class="stenka">Stenka</button>
+    <button @click="anotherAction" class="stenka">Stenka</button>
 </RouterLink>
 <RouterLink to="nft">
-    <button class="nft">NFT</button>
+    <button @click="anotherAction" class="nft">NFT</button>
 </RouterLink>
 <RouterLink to="task">
-    <button class="task">Task</button>
+    <button @click="anotherAction" class="task">Task</button>
 </RouterLink>
 </div>
 
@@ -25,21 +25,34 @@
 
 <script>
 export default {
-    methods: {
+  data() {
+    return {
+      storyImage: 'https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg',
+      storyText: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
+    };
+  },
+  methods: {
     shareToStory() {
-        if (this.TelegramWebApp) { // Проверяем, что TelegramWebApp существует
-            this.TelegramWebApp.shareToStory('https://i.postimg.cc/GmmhB85X/hatewhsxg.jpg', {
-                text: '@HateUsersBot and go hate your friends, also don\'t forget to visit the channel @hatewhsxg'
-            });
-        } else {
-            // Действия, если Telegram.WebApp не доступен
-            console.error("Telegram.WebApp не доступен");
-            // Например, можно показать сообщение пользователю
-            alert("Эта функция доступна только в Telegram Web App");
-        }
+      if (typeof Telegram.WebApp !== 'undefined') {
+        Telegram.WebApp.shareToStory(this.storyImage, { text: this.storyText })
+          .then(result => {
+            console.log('Story shared successfully:', result);
+          })
+          .catch(error => {
+            console.error('Error sharing to story:', error);
+            alert("Ошибка при публикации истории: " + error.message);
+          });
+      } else {
+        console.error("Telegram.WebApp не доступен");
+        alert("Эта функция доступна только в Telegram Web App");
+      }
+    },
+    anotherAction() {
+      console.log("Другая кнопка нажата");
     }
   }
-}
+};
+
 </script>
 
 <style scoped>
