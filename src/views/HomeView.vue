@@ -3,7 +3,7 @@
 <a href="https://t.me/haterusers">
 <button class="add">Add Hate</button>
 </a>
-<div style="overflow-x: scroll; display: flex;">
+<div class="scrollbar" style="overflow-x: scroll; display: flex;">
 <RouterLink to="home">
     <button class="hate">Hate</button>
 </RouterLink>
