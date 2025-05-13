@@ -24,7 +24,7 @@
             <p style="margin-left: 5px; margin-top: 5px;">Hate Caps</p>
             <p style="font-size: 12px; color: grey; margin-left: 5px; margin-top: -12px;">Quantity: 10 Caps</p>
     <a href="https://hatepay.vercel.app/">
-            <button class="claim">Claim 0.3 TON</button>
+            <button class="claim">Claim 1 TON</button>
     </a>
 </div>
 </div>
