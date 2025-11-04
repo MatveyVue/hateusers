@@ -1,4 +1,7 @@
 <template>
+<div id="preloader">
+  <div style="margin-top: -20px;" class="loader">loading</div>
+</div>
 <h1 class="active">Hate</h1>
 <a href="https://t.me/haterusers">
 <button class="add">Add Hate</button>
@@ -31,6 +34,18 @@
 <script setup>
 import { profile, open } from '../script/home.js'; 
 console.log(profile.value); 
+
+window.addEventListener('load', function() {
+    // Убираем стандартное поведение при загрузке, т.к. будем использовать setTimeout
+});
+
+// Устанавливаем таймер на 10 секунд (10000 миллисекунд)
+setTimeout(function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) { // Проверяем, существует ли элемент
+        preloader.classList.add('hidden'); // Добавляем класс для скрытия
+    }
+}, 3000); // 10000 миллисекунд = 10 секунд
 </script>
   
 <style scoped>
