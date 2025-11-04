@@ -3,7 +3,7 @@
   <h1>Create Message<br>To Stenka</h1>
   </div>
   <div style="text-align: center; margin-top: 50px;">
-      <input id="nick" class="nick" type="text" v-model="newPost.nick" placeholder="Your Nickname"><br>
+      <input id="nick" class="nick" type="text" v-model="newPost.nick" readonly><br>
       <textarea class="mess" v-model="newPost.text" placeholder="Your Message"></textarea><br>
   <RouterLink to="stenka">
       <button class="send" @click="submitPost">Send</button>
@@ -96,6 +96,7 @@
       font-family: Geologica;
       color: white;
       max-width: 500px;
+      font-size: 16px;
   }
   
   .mess {
@@ -108,6 +109,7 @@
       font-family: Geologica;
       color: white;
       max-width: 500px;
+      font-size: 16px;
   }
   
   .send {
