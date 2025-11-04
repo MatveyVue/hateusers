@@ -1,6 +1,5 @@
 <template>
 <div id="preloader">
-  <div style="margin-top: -20px;" class="loader">loading</div>
 </div>
 <div style="text-align: center; margin-top: 100px;">
 <img src="../components/UtyaB.gif" width="250px"><br>
