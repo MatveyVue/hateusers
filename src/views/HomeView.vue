@@ -1,6 +1,5 @@
 <template>
 <div id="preloader">
-  <div style="margin-top: -20px;" class="loader">loading</div>
 </div>
 <h1 class="active">Hate</h1>
 <a href="https://t.me/haterusers">
