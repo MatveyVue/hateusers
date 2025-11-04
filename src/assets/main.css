@@ -5,6 +5,9 @@ body {
   background-attachment: fixed;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -ms-touch-action: none; 
+  user-select: none;
+  scrollbar-width: none; 
 }
 
 .hatebtn {
