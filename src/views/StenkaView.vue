@@ -64,6 +64,9 @@ const firebaseConfig = {
 body {
   touch-action: none;
   overflow-y: scroll;
+  -ms-touch-action: none; 
+  user-select: none;
+  scrollbar-width: none; 
 }
 
 .active {
